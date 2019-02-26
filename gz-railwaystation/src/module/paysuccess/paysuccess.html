@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>车牌支付</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <style>
+    body, html {
+      position: absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      margin:0;
+      overflow: hidden;
+      font-size: 62.5%;
+      font-family:"Microsoft Yahei", "Arial", "Helvetica";
+    }
+
+    #main {
+
+      position: absolute;
+      background-color: #f6f6f6;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      margin:0;
+      font-family:"Microsoft Yahei", "Arial", "Helvetica";
+    }
+
+  </style>
+</head>
+<body>
+<div id="main">
+  <paysuccess v-bind:fee="fee" v-bind:paytype="paytype"></paysuccess>
+</div>
+</body>
+</html>
